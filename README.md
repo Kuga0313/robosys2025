@@ -1,9 +1,9 @@
 ## robosys2025
-課題だします
 
 ![test](https://github.com/Kuga0313/robosys2025/actions/workflows/test.yml/badge.svg)
 
 標準入力から読みんだ数字を足していく。
+
 （例）入力した値　：５
 　　　１＋２＋３＋４＋５より
 　　　出力される値：１５
