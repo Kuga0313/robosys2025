@@ -1,6 +1,6 @@
-#!/bin/bash -xv 
+#!/bin/bash 
 #SPDX
-ng () {
+n () {
 	echo ${1}行目が違うよ
 	res=1
 }
