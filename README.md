@@ -1,5 +1,6 @@
 ## robosys2025
 
+# plusコマンド
 ![test](https://github.com/Kuga0313/robosys2025/actions/workflows/test.yml/badge.svg)
 
 標準入力から読みんだ数字を足していく。  
