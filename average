@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Yusuke Kuga 　　　　　
+# SPDX-License-Identifier: GPL-3.0-only
+import sys
+
+ans = 0
+count = 0
+for line in sys.stdin:
+    try:
+        ans += int(line)
+        count += 1
+    except:
+        try:
+            ans += float(line)
+            count += 1
+        except ValueError:
+            continue
+
+if count > 0:
+    average = ans / count
+    print(f"合計: {ans}")
+    print(f"個数: {count}")
+    print(f"平均値: {average}")
+else:
+    print("データを入力してください")
