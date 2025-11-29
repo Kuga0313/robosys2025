@@ -15,5 +15,9 @@ for line in sys.stdin:
             count += 1
         except ValueError:
             continue
-average = ans / count
-print(f"{average}")
+if count > 0:
+    average = ans / count
+    print(f"{average}")
+else:
+    sys.exit(1)
+
