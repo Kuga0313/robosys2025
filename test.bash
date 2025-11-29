@@ -9,14 +9,14 @@ ng () {
 
 res=0
 
-out=$(seq 5 | ./plus)
+out=$(seq 5 | ./average)
 [ "${out}" = 15 ] || ng "$LINENO"
 
-out=$(echo あ| ./plus)
+out=$(echo あ| ./average)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "$(out)" = "" ] || ng "$LINENO"
 
-out=$(echo | ./plus)
+out=$(echo | ./average)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
