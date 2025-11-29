@@ -15,11 +15,5 @@ for line in sys.stdin:
             count += 1
         except ValueError:
             continue
-
-if count > 0:
-    average = ans / count
-    print(f"合計: {ans}")
-    print(f"個数: {count}")
-    print(f"平均値: {average}")
-else:
-    print("データを入力してください")
+average = ans / count
+print(f"{average}")
